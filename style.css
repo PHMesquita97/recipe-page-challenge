@@ -98,6 +98,34 @@ strong{
     color: var(--clr-text-secondary);
 }
 
-.nutrition-table{
-    list-style: none;
+.content section + section {
+    border-top: 1px solid var(--clr-border);
+    padding-top: 24px;
+    margin-top: 24px;
 }
+
+
+/*Need to find a better way to do it*/
+.nutrition-table {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+  .nutrition-table li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 1rem 5rem 1rem 1rem;
+    border-bottom: 1px solid var(--clr-border);
+    font-weight: bold;
+    color: var(--clr-text-primary);
+}
+  
+  .nutrition-table li:last-child {
+    border-bottom: none;
+}
+  
+  .nutrition-table li span:last-child {
+    color: var(--clr-heading); /* Valor destacado */
+}
+  
